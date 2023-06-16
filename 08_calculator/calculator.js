@@ -7,12 +7,7 @@ const subtract = function(a,b) {
 };
 
 const sum = function(num) {
-	let len = num.length;
-  let ans=0;
-  for(let i=0;i<len;i++)
-  {
-    ans+=num[i];
-  }
+	let ans = num.reduce((sum,item)=> sum+=item,0);
 
   return ans;
 };
